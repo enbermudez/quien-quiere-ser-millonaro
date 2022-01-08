@@ -1,13 +1,155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: url('./images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#question-menu {
+  width: 100vw;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+}
+
+#question-menu > .question {
+  width: 960px;
+  height: 101px;
+  background: url('./images/bg-question.png');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+#question-menu > .options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+  grid-row-gap: 5px;
+}
+
+#question-menu > .options > .option-left {
+  background: url('./images/bg-option-left.png');
+  background-size: cover;
+  background-position: center center;
+  padding-left: 40px;
+}
+
+#question-menu > .options > .option-right {
+  background: url('./images/bg-option-right.png');
+  background-size: cover;
+  background-position: center center;
+  padding-right: 40px;
+}
+
+#question-menu > .options > .option-left:hover {
+  background: url('./images/bg-option-left-hover.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#question-menu > .options > .option-right:hover {
+  background: url('./images/bg-option-right-hover.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#question-menu > .options > .option-left.option-selected {
+  background: url('./images/bg-option-left-hover.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#question-menu > .options > .option-right.option-selected {
+  background: url('./images/bg-option-right-hover.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#question-menu > .options > .option-left.option-correct {
+  background: url('./images/bg-option-left-correct.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#question-menu > .options > .option-right.option-correct {
+  background: url('./images/bg-option-right-correct.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#question-menu > .options > .option-left.option-selected.option-wrong {
+  background: url('./images/bg-option-left-wrong.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#question-menu > .options > .option-right.option-selected.option-wrong {
+  background: url('./images/bg-option-right-wrong.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#question-menu > .options > .option {
+  width: 320px;
+  height: 36px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.game-button {
+  background: rgba(0, 0, 0, 0.85);
+  border: none;
+  padding: 20px 40px;
+  font-size: 2rem;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  transition-duration: .25s;
+  cursor: pointer;
+}
+
+.game-button:hover {
+  background: rgba(0, 0, 0, 0.95);
 }
