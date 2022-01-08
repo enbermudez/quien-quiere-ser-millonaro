@@ -36,8 +36,8 @@ const QuestionMenu = ({ questionSelected, gameStarted, gameOver, question, handl
                 key={id}
                 className={
                   classnames('option', {
-                    'option-left': id % 2 == 1,
-                    'option-right': id % 2 == 0,
+                    'option-left': id % 2 === 1,
+                    'option-right': id % 2 === 0,
                     'option-selected': selected === id,
                     'option-correct': correct && (lastQuestion === 1 || lastQuestion === 2),
                     'option-wrong': selected === id && lastQuestion === 2,
