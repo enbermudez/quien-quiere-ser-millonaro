@@ -82,7 +82,7 @@ const App = () => {
   useEffect(() => {
     if (!audio.player) return;
     if (audio.loop) audio.player.loop = true;
-    // audio.player.play();
+    audio.player.play();
   }, [audio]);
 
   useEffect(() => {
