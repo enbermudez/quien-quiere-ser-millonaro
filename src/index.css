@@ -133,6 +133,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .victory-message {
@@ -160,4 +161,30 @@ body {
 
 .game-button:hover {
   background: rgba(0, 0, 0, 0.95);
+}
+
+@media (max-width: 400px) {
+  #question-menu > .question {
+    width: 384px;
+    height: 40.4px;
+    background: url('./images/bg-question.png');
+    background-size: cover;
+    background-position: center center;
+    font-size: 1rem;
+  }
+
+  #question-menu > .options > .option {
+    width: 192px;
+    height: 21px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .game-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }

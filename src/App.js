@@ -10,6 +10,8 @@ import audioLose from './audio/lose.mp3';
 import whoWasCorrect from './audio/who-was-correct.mp3';
 import lastWin from './audio/last-win.mp3';
 
+const VICTORY = 8;
+
 const App = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -72,6 +74,7 @@ const App = () => {
     playAudio(audioQuestion, true);
     setGameStarted(true);
     setGameOver(false);
+    setMillionaire(false);
   };
 
   // Effects
@@ -79,7 +82,7 @@ const App = () => {
   useEffect(() => {
     if (!audio.player) return;
     if (audio.loop) audio.player.loop = true;
-    audio.player.play();
+    // audio.player.play();
   }, [audio]);
 
   useEffect(() => {
@@ -87,7 +90,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    if (currentLevel === 3) {
+    if (currentLevel === VICTORY) {
       playAudio(lastWin);
       setMillionaire(true);
       setGameOver(true);
