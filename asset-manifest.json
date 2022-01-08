@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/quien-quiere-ser-millonaro/static/css/main.08692503.css",
-    "main.js": "/quien-quiere-ser-millonaro/static/js/main.0889a3e4.js",
+    "main.js": "/quien-quiere-ser-millonaro/static/js/main.e793bdb5.js",
     "static/media/question-1.mp3": "/quien-quiere-ser-millonaro/static/media/question-1.c45565f972534a302aed.mp3",
     "static/media/background.jpg": "/quien-quiere-ser-millonaro/static/media/background.7bc614ee499fea540c76.jpg",
     "static/media/last-win.mp3": "/quien-quiere-ser-millonaro/static/media/last-win.34749fddd8f6072e1889.mp3",
@@ -11,10 +11,10 @@
     "static/media/bg-question.png": "/quien-quiere-ser-millonaro/static/media/bg-question.fa7c78a0b7252993e14a.png",
     "index.html": "/quien-quiere-ser-millonaro/index.html",
     "main.08692503.css.map": "/quien-quiere-ser-millonaro/static/css/main.08692503.css.map",
-    "main.0889a3e4.js.map": "/quien-quiere-ser-millonaro/static/js/main.0889a3e4.js.map"
+    "main.e793bdb5.js.map": "/quien-quiere-ser-millonaro/static/js/main.e793bdb5.js.map"
   },
   "entrypoints": [
     "static/css/main.08692503.css",
-    "static/js/main.0889a3e4.js"
+    "static/js/main.e793bdb5.js"
   ]
 }
