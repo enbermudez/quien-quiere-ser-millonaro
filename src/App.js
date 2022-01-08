@@ -8,6 +8,7 @@ import audioQuestion from './audio/question-1.mp3';
 import audioWin from './audio/win.mp3';
 import audioLose from './audio/lose.mp3';
 import whoWasCorrect from './audio/who-was-correct.mp3';
+import lastWin from './audio/last-win.mp3';
 
 const App = () => {
   const [questions, setQuestions] = useState([]);
@@ -19,6 +20,7 @@ const App = () => {
   const [lastQuestion, setLastQuestion] = useState(0);
   const [questionSelected, setQuestionSelected] = useState(false);
   const [nextLevel, setNextLevel] = useState(false);
+  const [millionaire, setMillionaire] = useState(false);
 
   // Functions
 
@@ -84,6 +86,14 @@ const App = () => {
     setQuestions(data.questions);
   }, []);
 
+  useEffect(() => {
+    if (currentLevel === 3) {
+      playAudio(lastWin);
+      setMillionaire(true);
+      setGameOver(true);
+    }
+  }, [currentLevel]);
+
   return (
     <div id="app">
       <button
@@ -94,7 +104,7 @@ const App = () => {
       </button>
 
       <button
-        className={classnames('game-button', { invisible: !gameOver })}
+        className={classnames('game-button', { invisible: !gameOver || millionaire })}
         onClick={initialSetup}
       >
         Volver a intentarlo
@@ -105,6 +115,15 @@ const App = () => {
         onClick={nextQuestion}
       >
         Siguiente pregunta
+      </button>
+
+      <h1 className={classnames('victory-message', { invisible: !millionaire })}>¡¡Felicidades, ganaste dos pelucas!!</h1>
+
+      <button
+        className={classnames('game-button', { invisible: !millionaire })}
+        onClick={initialSetup}
+      >
+        Volver a jugar
       </button>
 
       { currentQuestion && (
