@@ -28,6 +28,32 @@ const data = {
     },
     {
       level: 1,
+      title: '¿Cuál de los siguientes videojuegos no me gusta?',
+      options: [
+        {
+          id: 1,
+          value: 'Fallout',
+          correct: false,
+        },
+        {
+          id: 2,
+          value: 'Pokémon',
+          correct: false,
+        },
+        {
+          id: 3,
+          value: 'WoW',
+          correct: true,
+        },
+        {
+          id: 4,
+          value: 'Gunz',
+          correct: false,
+        }
+      ]
+    },
+    {
+      level: 1,
       title: '¿Cuál de las siguientes opciones no me gusta?',
       options: [
         {
@@ -49,6 +75,32 @@ const data = {
           id: 4,
           value: 'Cebolla',
           correct: false,
+        }
+      ]
+    },
+    {
+      level: 1,
+      title: '¿Cuál de las siguientes opciones es mi favorita?',
+      options: [
+        {
+          id: 1,
+          value: 'Pepsi',
+          correct: false,
+        },
+        {
+          id: 2,
+          value: 'Té',
+          correct: false,
+        },
+        {
+          id: 3,
+          value: 'Agua con gas',
+          correct: false,
+        },
+        {
+          id: 4,
+          value: 'Café',
+          correct: true,
         }
       ]
     },
@@ -126,6 +178,32 @@ const data = {
         {
           id: 4,
           value: 'Ing. en Algoritmos',
+          correct: false,
+        }
+      ]
+    },
+    {
+      level: 2,
+      title: '¿Cuál es mi casa favorita de Hogwarts?',
+      options: [
+        {
+          id: 1,
+          value: 'Slytherin',
+          correct: false,
+        },
+        {
+          id: 2,
+          value: 'Hufflepuff',
+          correct: false,
+        },
+        {
+          id: 3,
+          value: 'Ravenclaw',
+          correct: true,
+        },
+        {
+          id: 4,
+          value: 'Gryffindor',
           correct: false,
         }
       ]
@@ -236,6 +314,32 @@ const data = {
     },
     {
       level: 3,
+      title: '¿Cuántos hermanos tengo?',
+      options: [
+        {
+          id: 1,
+          value: '1',
+          correct: false,
+        },
+        {
+          id: 2,
+          value: 'Niguno',
+          correct: true,
+        },
+        {
+          id: 3,
+          value: '2',
+          correct: false,
+        },
+        {
+          id: 4,
+          value: '3',
+          correct: false,
+        }
+      ]
+    },
+    {
+      level: 3,
       title: 'Le tengo miedo a:',
       options: [
         {
@@ -308,6 +412,32 @@ const data = {
         {
           id: 4,
           value: 'Laravel',
+          correct: false,
+        }
+      ]
+    },
+    {
+      level: 4,
+      title: '¿En cuál de estas empresas no he trabajado?',
+      options: [
+        {
+          id: 1,
+          value: 'MercadoLibre',
+          correct: false,
+        },
+        {
+          id: 2,
+          value: 'Innova 4J',
+          correct: false,
+        },
+        {
+          id: 3,
+          value: 'Twitter',
+          correct: true,
+        },
+        {
+          id: 4,
+          value: 'Paypal',
           correct: false,
         }
       ]
@@ -392,6 +522,32 @@ const data = {
     },
     {
       level: 5,
+      title: '¿Cuál de estos no es uno de mis usuarios?',
+      options: [
+        {
+          id: 1,
+          value: 'enbermudas',
+          correct: false,
+        },
+        {
+          id: 2,
+          value: 'Kakarakaka',
+          correct: true,
+        },
+        {
+          id: 3,
+          value: 'Sebin',
+          correct: false,
+        },
+        {
+          id: 4,
+          value: 'PTJ',
+          correct: false,
+        }
+      ]
+    },
+    {
+      level: 5,
       title: '¿Qué le ocurrió a mis shorts de tucanes?',
       options: [
         {
@@ -422,7 +578,7 @@ const data = {
       options: [
         {
           id: 1,
-          value: 'Amarillo',
+          value: 'Negro',
           correct: false,
         },
         {
@@ -437,7 +593,7 @@ const data = {
         },
         {
           id: 4,
-          value: 'Rojo',
+          value: 'Blanco',
           correct: false,
         }
       ]
@@ -465,6 +621,32 @@ const data = {
           id: 4,
           value: 'Muse',
           correct: true,
+        }
+      ]
+    },
+    {
+      level: 6,
+      title: '¿Cuál es mi canción favorita?',
+      options: [
+        {
+          id: 1,
+          value: 'Mother Tongue',
+          correct: false,
+        },
+        {
+          id: 2,
+          value: 'Knights of Cydonia',
+          correct: true,
+        },
+        {
+          id: 3,
+          value: 'Lyrics Lie',
+          correct: false,
+        },
+        {
+          id: 4,
+          value: 'Whoa',
+          correct: false,
         }
       ]
     },
